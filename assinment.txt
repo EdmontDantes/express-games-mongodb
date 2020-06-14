@@ -1,0 +1,57 @@
+Create new repo in Github called- express-games-mongodb
+submit new Github link here 
+
+// make a copy of your express games assignment
+// remove the git remote from the copy so you can upload to a new github repository
+// change all route names not to use capital letters
+// /allgames
+// /singelgame
+// /creategame
+// /updategame
+// /deletegame
+
+
+// add a database to the project called express-videogames
+
+
+MODEL:
+// name - make unique, lowercase, and required, string
+// description - string, required
+// released - string,
+// playtime - number in minutes
+// secret - string, required
+// timestamp - date, default to the current date
+
+
+// all current routes should be moved to controllers with added db functionality
+// all functions in controllers should match the route names.
+
+
+MIDDLEWARE:
+// Remove your middleware from the app.use in your index
+// In my middleware function I can define the name of a variable by chaining the variable name I want to use to my req
+// I can send the results of my middleware anywhere by assigning a value to my new req variable
+// Assign the value of your random dumb quote to your new req variable
+
+
+NEW GET ROUTES:
+/enter
+/enter
+/noentry
+
+
+// create a new route /enter in your gameRoutes.js
+// it should be a post route that takes a secret and decides whether you can enter or not.
+// if the entered secret is incorrect it should redirect to a route called /noentry in a new file called mainRoutes.js in your routes folder
+// /noentry should send a string that says, 'You will have to enter the correct secret to enter'
+// if the secret is correct it should redirect to a route called /enter from your authRoutes.js
+// pass the game name as a parameter to the /enter route
+// In your routes folder, create a new route in a new authRoutes.js file called /enter
+// it should take a parameter called game
+// The route should send a string that says:
+// Welcome:
+// You have entered the correct secret for <game name>
+// Here is your quote:
+// <dumb quote here>
+
+//HINT: I can use my middleware req variable in this route as a string.
